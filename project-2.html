@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorChanger</title>
+    
+  
+  <style>
+
+    .container{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      gap:10px;
+    }
+
+.button {
+    background: #af40ff;
+    width:100px;
+    margin: 10px 30px;
+    padding: 18px 22px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+    outline:2px solid black;
+    background-image: repeating-linear-gradient(-45deg, #b3b2ff 12px 36px, #c08aff 36px 60px, #ffd6fa 60px 84px, #ff97c5 84px 108px, #ffecec 108px 132px);
+    color: #010138;
+    background-size: 300% 150%;
+    border:5px solid white
+}
+
+
+
+
+.button:hover {
+    background-position: 20% center;
+    transform:scale(1.1)
+}
+
+ .button:active {
+    background-position: 0% center;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+ 
+ 
+  
+  
+  <h3 style = 'text-align: center;'>Random color Generator</h3>
+
+
+  <div class= "container">
+
+     <a class="button " id="start">Start</a>
+     <a class="button " id="end">Stop</a>
+ 
+</div>
+  
+
+
+
+</body>
+<script src="project-2.js"></script>
+</html>
